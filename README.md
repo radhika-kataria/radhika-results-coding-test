@@ -1,5 +1,5 @@
 ## Requirements
-The challenge was completed in Python 3.11.4.
+The coding test was completed in Python 3.11.4.
 
 Requirements can be found in requirements.txt
 - pandas version 1.5.3
