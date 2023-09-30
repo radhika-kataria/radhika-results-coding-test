@@ -24,7 +24,7 @@
 Using a scatter plot to visualise the data, samples were ordered from
 high to low based on their Normalised no. of AsiSI breaks
 
-![](readme_files/figure-markdown_github/cars-1.png)
+![](results/dotplot.png)
 
 ## Questions
 
