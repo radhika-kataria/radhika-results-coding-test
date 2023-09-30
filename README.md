@@ -1,11 +1,11 @@
 ## Results
 
 The output file from the nextflow implementation contains the following columns: 
--   Sample: The sample names for each bed file
--   Total filtered breaks: The total number of breakpoints in the bedfile with a MAPQ>=30
--   No. of AsiSI breaks: The number of breaks in each sample which intersect with AsiSI breaks
--   Normalised no. of AsiSI breaks: The sum of AsiSI breaks in each sample divided by the total number of filtered breaks / 1000
--   No. of unique AsiSI sites overlapped: The absolute number of AsiSI sites found in a sample 
+-   **Sample:** The sample names for each bed file
+-   **Total filtered breaks:** The total number of breakpoints in the bedfile with a MAPQ>=30
+-   **No. of AsiSI breaks:** The number of breaks in each sample which intersect with AsiSI breaks
+-   **Normalised no. of AsiSI breaks:** The sum of AsiSI breaks in each sample divided by the total number of filtered breaks / 1000
+-   **No. of unique AsiSI sites overlapped:** The absolute number of AsiSI sites found in a sample 
 
 | Sample | Total filtered breaks | No. of AsiSI breaks | Normalised no. of AsiSI breaks | No. of unique AsiSI sites overlapped |
 |:----|-------------:|------------:|------------------:|---------------------:|
