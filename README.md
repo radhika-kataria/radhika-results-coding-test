@@ -1,3 +1,9 @@
+## Requirements
+
+## Scripts
+
+## Workflow
+
 ## Results
 
 The output file from the nextflow implementation contains the following columns: 
