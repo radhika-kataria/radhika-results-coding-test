@@ -1,4 +1,24 @@
+## Requirements
+The challenge was completed in Python 3.11.4.
+
+Requirements can be found in requirements.txt
+- pandas version 1.5.3
+- pyranges version 0.0.129
+
+## Scripts
+
+
+## Workflow
+The workflow was created using Nextflow Version: 23.04.3 build 5875
+
 ## Results
+
+The output file from the nextflow implementation contains the following columns: 
+-   **Sample:** The sample names for each bed file
+-   **Total filtered breaks:** The total number of breakpoints in the bedfile with a MAPQ>=30
+-   **No. of AsiSI breaks:** The number of breaks in each sample which intersect with AsiSI breaks
+-   **Normalised no. of AsiSI breaks:** The sum of AsiSI breaks in each sample divided by the total number of filtered breaks / 1000
+-   **No. of unique AsiSI sites overlapped:** The absolute number of AsiSI sites found in a sample 
 
 | Sample | Total filtered breaks | No. of AsiSI breaks | Normalised no. of AsiSI breaks | No. of unique AsiSI sites overlapped |
 |:----|-------------:|------------:|------------------:|---------------------:|
@@ -24,7 +44,7 @@
 Using a scatter plot to visualise the data, samples were ordered from
 high to low based on their Normalised no. of AsiSI breaks
 
-![](readme_files/figure-markdown_github/cars-1.png)
+![](results/dotplot.png)
 
 ## Questions
 
@@ -58,7 +78,7 @@ in a single sample?**
     sites using the overlap function in Pyranges package
 
 -   This identified all the “Unique” sites in a Samples bed file which
-    overlapped 1 of a possible 70 AsiSI sites
+    overlapped 1 of a possible 71 AsiSI sites
 
 -   The maximum number of AsiSI sites detected in a sample was 4 (found
     in samples 15 and 9, see last column of results table)
