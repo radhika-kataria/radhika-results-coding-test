@@ -1,0 +1,2 @@
+pandas==1.5.3
+pyranges==0.0.129
