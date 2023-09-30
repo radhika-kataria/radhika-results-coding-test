@@ -1,8 +1,15 @@
 ## Requirements
+The challenge was completed in Python 3.11.4.
+
+Requirements can be found in requirements.txt
+- pandas version 1.5.3
+- pyranges version 0.0.129
 
 ## Scripts
 
+
 ## Workflow
+The workflow was created using Nextflow Version: 23.04.3 build 5875
 
 ## Results
 
