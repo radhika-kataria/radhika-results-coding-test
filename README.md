@@ -1,5 +1,12 @@
 ## Results
 
+The output file from the nextflow implementation contains the following columns: 
+-   Sample: The sample names for each bed file
+-   Total filtered breaks: The total number of breakpoints in the bedfile with a MAPQ>=30
+-   No. of AsiSI breaks: The number of breaks in each sample which intersect with AsiSI breaks
+-   Normalised no. of AsiSI breaks: The sum of AsiSI breaks in each sample divided by the total number of filtered breaks / 1000
+-   No. of unique AsiSI sites overlapped: The absolute number of AsiSI sites found in a sample 
+
 | Sample | Total filtered breaks | No. of AsiSI breaks | Normalised no. of AsiSI breaks | No. of unique AsiSI sites overlapped |
 |:----|-------------:|------------:|------------------:|---------------------:|
 | 1      |                  7559 |                   0 |                       0.000000 |                                    0 |
@@ -58,7 +65,7 @@ in a single sample?**
     sites using the overlap function in Pyranges package
 
 -   This identified all the “Unique” sites in a Samples bed file which
-    overlapped 1 of a possible 70 AsiSI sites
+    overlapped 1 of a possible 71 AsiSI sites
 
 -   The maximum number of AsiSI sites detected in a sample was 4 (found
     in samples 15 and 9, see last column of results table)
