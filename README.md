@@ -62,11 +62,11 @@ high to low based on their Normalised no. of AsiSI breaks
 
 **1. Which of the samples are likely to be controls or treated?**
 
--   It looks like samples 1, 2, 4, 5, 6, 7, 8 are control samples as 0
+-   It looks like samples 1, 2, 4, 5, 6, 7, 8 are treated samples as 0
     AsiSI breaks were detected
 
--   The remaining samples 13, 14, 12, 9, 15, 16, 10, 11 are in the
-    treated group
+-   The remaining samples 13, 14, 12, 9, 15, 16, 10, 11 are likely to be in the
+    control group as AsiSI breaks were found in these samples
 
 **2. Are there any you are uncertain of?**
 
@@ -77,7 +77,7 @@ high to low based on their Normalised no. of AsiSI breaks
 
 -   It seems odd that there was only 1 read found intersecting a singular AsiSI site in all other samples there were atleast 2 sequencing reads representatitive of overlapping an AsiSI site
 
--   Double check the mapping quality of this site? could there be a margin error producing a false positive result? 
+-   Double check the mapping quality of this site? could there be a margin error producing a false positive result here? what is the chance of randomly targeting an AsiSI site in the non-control groups ? 
 
 **4. Of all the possible AsiSI sites described in the
 chr21_AsiSI_sites.t2t.bed file what is the maximum percentage observed
