@@ -56,7 +56,7 @@ high to low based on their Normalised no. of AsiSI breaks
 
 - Point size illustrates the maximum number of AsiSI breaks observed in a sample
 
-![](results/dotplot_size.png)
+![](results/dotplot.png)
 
 ## Questions
 
