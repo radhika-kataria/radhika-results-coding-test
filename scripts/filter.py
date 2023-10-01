@@ -2,22 +2,15 @@ import pandas as pd
 from time import time
 import sys
 import csv
+import os
 
 ## tells us the bedfile is the first input in the bash command
 bedfile = sys.argv[1]
 file_name = sys.argv[1].replace('.bed', '_filtered.bed')
 
-# A time decorator function 
-def timer_func(func):
-    # This function shows the execution time of
-    # the function object passed
-    def wrap_func(*args, **kwargs):
-        t1 = time()
-        result = func(*args, **kwargs)
-        t2 = time()
-        print(f'Function {func.__name__!r} executed in {(t2-t1):.4f}s')
-        return result
-    return wrap_func
+## execute the timer function
+timedecorator_file_path = os.path.join(os.path.dirname(__file__), "time.py")
+exec(open(timedecorator_file_path).read())
 
 ## Let's create a function to filter the bed file (this function could poteintally be stored in a separate script and called)
 @timer_func
