@@ -54,7 +54,7 @@ The output file from the nextflow implementation contains the following columns:
 Using a scatter plot to visualise the data, samples were ordered from
 high to low based on their Normalised no. of AsiSI breaks
 
-![](results/dotplot.png)
+![](results/dotplot_size.png)
 
 ## Questions
 
