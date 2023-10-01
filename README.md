@@ -77,7 +77,7 @@ high to low based on their Normalised no. of AsiSI breaks
 
 -   It seems odd that there was only 1 read found intersecting a singular AsiSI site in all other samples there were atleast 2 sequencing reads representatitive of overlapping an AsiSI site
 
--   Double check the mapping quality of this site? could there be a margin error producing a false positive result here? what is the chance of randomly targeting an AsiSI site in the non-control groups ?
+-   Could there be a margin error producing a false positive result here? what is the chance of randomly targeting an AsiSI site in the treated groups ?
 
 -   It is possible that Sample 3 may have had higher levels of heterochromatin at AsiSI site preventing cuts in this sample? 
 
