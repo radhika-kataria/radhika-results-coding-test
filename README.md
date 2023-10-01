@@ -87,8 +87,8 @@ in a single sample?**
     to look at the overlap of sites in a samples bed file with the AsiSI
     sites using the overlap function in Pyranges package
 
--   This identified all the “Unique” sites in a Samples bed file which
-    overlapped 1 of a possible 71 AsiSI sites
+-   This identified the absolute number of break sites in a Samples which
+    overlapped with each of the possible 71 AsiSI sites on chr21
 
 -   The maximum number of AsiSI sites detected in a sample was 4 (found
     in samples 15 and 9, see last column of results table)
