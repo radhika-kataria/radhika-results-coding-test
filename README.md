@@ -11,6 +11,12 @@ Requirements can be found in requirements.txt
 ## Workflow
 The workflow was created using Nextflow Version: 23.04.3 build 5875
 
+Run using the command 
+
+```
+nextflow scripts/main.nf
+```
+
 ## Results
 
 The output file from the nextflow implementation contains the following columns: 
