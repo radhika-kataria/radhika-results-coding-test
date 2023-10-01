@@ -6,7 +6,11 @@ Requirements can be found in requirements.txt
 - pyranges version 0.0.129
 
 ## Scripts
-
+- **time.py** Time decorator function called in each script 
+- **filter.py** Filter bed files with a MAPQ>=30
+- **intersect.py** Finding breaks in samples which intersect with AsiSI break sites
+- **overlap.py**  Finding breaks in samples which overlap with unique AsiSI break sites (to answer question 4)
+- **normalised.py** Calculate the normalised number of AsiSI breaks and organise outputs into a dataframe
 
 ## Workflow
 The workflow was created using Nextflow Version: 23.04.3 build 5875
