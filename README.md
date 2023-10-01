@@ -75,11 +75,9 @@ high to low based on their Normalised no. of AsiSI breaks
 
 **3. Can you explain the samples in the uncertain group?**
 
--   Could there be false positive detection of an AsiSI site ? In other
-    samples even if only 1 AsiSI site intersected with the samples break
-    there were generally
+-   It seems odd that there was only 1 read found intersecting a singular AsiSI site in all other samples there were atleast 2 sequencing reads representatitive of overlapping an AsiSI site
 
--   Double check the mapping quality of this site?
+-   Double check the mapping quality of this site? could there be a margin error producing a false positive result? 
 
 **4. Of all the possible AsiSI sites described in the
 chr21_AsiSI_sites.t2t.bed file what is the maximum percentage observed
