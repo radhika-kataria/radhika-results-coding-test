@@ -1,5 +1,5 @@
 ## Requirements
-The challenge was completed in Python 3.11.4.
+The coding test was completed in Python 3.11.4.
 
 Requirements can be found in requirements.txt
 - pandas version 1.5.3
@@ -10,6 +10,12 @@ Requirements can be found in requirements.txt
 
 ## Workflow
 The workflow was created using Nextflow Version: 23.04.3 build 5875
+
+Run using the command 
+
+```
+nextflow scripts/main.nf
+```
 
 ## Results
 
