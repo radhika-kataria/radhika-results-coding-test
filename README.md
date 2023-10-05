@@ -54,19 +54,19 @@ The output file from the nextflow implementation contains the following columns:
 Using a scatter plot to visualise the data, samples were ordered from
 high to low based on their Normalised no. of AsiSI breaks
 
-- Point size illustrates the maximum number of AsiSI breaks observed in a sample
+- Point size illustrates the number of AsiSI sites observed in a sample
 
-![](results/dotplot_size.png)
+![](results/dotplot.png)
 
 ## Questions
 
 **1. Which of the samples are likely to be controls or treated?**
 
--   It looks like samples 1, 2, 4, 5, 6, 7, 8 are control samples as 0
+-   It looks like samples 1, 2, 4, 5, 6, 7, 8 are treated samples as 0
     AsiSI breaks were detected
 
--   The remaining samples 13, 14, 12, 9, 15, 16, 10, 11 are in the
-    treated group
+-   The remaining samples 13, 14, 12, 9, 15, 16, 10, 11 are likely to be in the
+    control group as AsiSI breaks were found in these samples
 
 **2. Are there any you are uncertain of?**
 
@@ -75,11 +75,11 @@ high to low based on their Normalised no. of AsiSI breaks
 
 **3. Can you explain the samples in the uncertain group?**
 
--   Could there be false positive detection of an AsiSI site ? In other
-    samples even if only 1 AsiSI site intersected with the samples break
-    there were generally
+-   It seems odd that there was only 1 read found intersecting a singular AsiSI site in all other samples there were atleast 2 sequencing reads representatitive of overlapping an AsiSI site
 
--   Double check the mapping quality of this site?
+-   Could there be a margin error producing a false positive result here? what is the chance of randomly targeting an AsiSI site in the treated groups ?
+
+-   It is possible that Sample 3 may have had higher levels of heterochromatin at AsiSI site preventing cuts in this sample? 
 
 **4. Of all the possible AsiSI sites described in the
 chr21_AsiSI_sites.t2t.bed file what is the maximum percentage observed
@@ -89,8 +89,8 @@ in a single sample?**
     to look at the overlap of sites in a samples bed file with the AsiSI
     sites using the overlap function in Pyranges package
 
--   This identified all the “Unique” sites in a Samples bed file which
-    overlapped 1 of a possible 71 AsiSI sites
+-   This identified the absolute number of break sites in a Samples which
+    overlapped with each of the possible 71 AsiSI sites on chr21
 
 -   The maximum number of AsiSI sites detected in a sample was 4 (found
     in samples 15 and 9, see last column of results table)
